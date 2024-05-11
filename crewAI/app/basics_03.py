@@ -12,10 +12,11 @@ import gradio as gr
 # poetry new crewAI_tutorial --name app
 # poetry config virtualenvs.in-project true
 # poetry add crewai python-decouple gradio beautifulsoup4
-# cd crewAI_tutorial
+# cd crewAI_tutorial model = gpt-3.5-turbo
+# poetry run python3 basics_03.py
 
 os.environ["OPENAI_API_KEY"] = config("OPENAI_API_KEY")
-llm = ChatOpenAI(model="gpt-4-turbo-preview")
+llm = ChatOpenAI(model="gpt-4-turbo-preview") # gpt-3.5-turbo
 
 class WebBrowserToo():
 
